@@ -1,0 +1,63 @@
+%%
+%% This is file `lstlangora.sty',
+%% generated with the docstrip utility.
+%%
+%% The original source files were:
+%%
+%% Oracle.dtx  (with options: `lang0')
+%% 
+\lst@definelanguage{Oracle}
+{
+%% DDL statements
+morekeywords={alter,create,drop,or,rename,replace},
+%% types of schema object
+morekeywords={body,cluster,constraint,context,controlfile,database,dimension,directory,function,index,indextype,java,library,link,log,materialized,operator,outline,package,partition,procedure,profile,role,rollback,schema,segment,sequence,snapshot,synonym,table,tablespace,trigger,type,user,view},
+%% DML statements
+morekeywords={select,insert,update,delete},
+morekeywords={all,as,by,distinct,from,group,having,inner,intersect,into,left,minus,natural,order,outer,right,union,values,where},
+morekeywords={set,transaction,commit,committed,isolation,lock,only,read,rollback,serializable,work,write},
+morekeywords={all,grant,on,option,public,revoke,to,with},
+morekeywords={and,between,in,like,not,or},
+morekeywords={all,any,some},
+morekeywords={explain,plan},
+morekeywords={access,add,all,alter,and,any,as,asc,analyze,audit,between,by,char,check,cluster,column,comment,compress,connect,create,current,date,decimal,default,delete,desc,distinct,drop,else,exclusive,exists,file,float,for,from,grant,group,having,identified,immediate,in,increment,index,initial,insert,integer,intersect,into,is,level,like,lock,long,maxextents,minus,mlslabel,mode,modify,noaudit,nocompress,not,nowait,null,number,of,offline,on,online,option,or,order,pctfree,prior,privileges,public,raw,rename,resource,revoke,row,rowid,rownum,rows,select,session,set,share,size,smallint,start,successful,synonym,sysdate,table,then,to,trigger,uid,union,unique,update,user,validate,values,varchar,varchar2,view,whenever,where,with},
+morekeywords={all,constraint,constraints,foreign,key,primary,references,set,deferrable,deferred}
+morekeywords={create,or,replace,drop,execute,call,is,as},
+morekeywords={map,member},
+morekeywords={binary_integer,dec,decimal,double,float,int,integer,natural,naturaln,number,numeric,pls_integer,positive,positiven,precision,real,signtype,smallint},
+morekeywords={char,character,long,nchar,nvarchar2,raw,rowid,string,urowid,varchar,varchar2},
+morekeywords={record,table,varray},
+morekeywords={cursor,ref},
+morekeywords={bfile,blob,clob,nclob},
+morekeywords={boolean,date,exception,rowtype,type},
+morekeywords={in,out,inout},
+morekeywords={old,new},
+morekeywords={and,between,in,like,not,or},
+morekeywords={declare,begin,end},
+morekeywords={default},
+morekeywords={if,then,else,elsif,when},
+morekeywords={for,in,reverse,while,loop},
+morekeywords={return,exit,break,raise,goto},
+morekeywords={insert,select,into,update,delete},
+morekeywords={after,before,each,of,on,row,when},
+morekeywords={inserting,updating,deleting},
+morekeywords={pragma,restrict_references,rnds,wnds,rnps,wnps},
+morekeywords={show,errors},
+morekeywords={partition,subpartition,partitions,subpartitions,by,range,hash,list,values,less,than,store,in,global,local,enable,row,movement},
+morekeywords={join},
+morekeywords={bitmap,rebuild,hashkeys},
+morekeywords={compute,estimate,statistics,validate,structure,list,chained,rows},
+morekeywords={object,nested,store,the},
+morekeywords={list,chained},
+morekeywords={using},
+morekeywords={export,import},
+sensitive=f,
+morecomment=[l]--,
+morecomment=[s]{/*}{*/},
+morestring=[d]',
+morestring=[d]"
+}[keywords,comments,strings]
+
+\endinput
+%%
+%% End of file `lstlangora.sty'.
