@@ -1,0 +1,81 @@
+\lst@definelanguage[SQL86]{SQL}%
+{	morekeywords={all,and,any,as,asc,authorization,avg,between,by,char,character,%
+		close,cobol,commit,count,create,current,cursor,dec,decimal,declare,delete,%
+		desc,distinct,double,escape,exists,fetch,float,for,fortran,from,grant,%
+		group,having,in,indicator,insert,int,integer,into,is,language,like,max,%
+		min,module,not,null,numeric,of,on,open,option,or,order,pascal,pli,%
+		precision,privileges,procedure,public,real,rollback,schema,select,%
+		set,smallint,some,sqlcode,sum,table,union,unique,update,user,values,%
+		view,where,with,work},%
+	sensitive=false,%
+	morecomment=[l]--,%
+	morestring=[b]'%
+}[keywords,comments,strings]
+
+\lst@definelanguage[SQL89]{SQL}[SQL86]{SQL}%
+{	morekeywords={ begin,check,continue,default,end,end-exec,exec,foreign,found,%
+		go,goto,key,primary,references,section,sql,sqlerror,to,whenever},%
+	sensitive=false%
+}[keywords]
+
+\lst@definelanguage[SQL92]{SQL}[SQL89]{SQL}%
+{	morekeywords={absolute,action,ada,add,allocate,alter,are,assertion,at,bit,%
+		bit_length,both,c,cascade,cascaded,case,cast,catalog,catalog_name,%
+		character_length,character_set_catalog,character_set_name,%
+		character_set_schema,char_length,class_origin,coalesce,collate,%
+		collation,collation_catalog,collation_name,collation_schema,column,%
+		column_name,command_function,committed,condition_number,connect,%
+		connection,connection_name,constraint,constraints,constraint_catalog,%
+		constraint_name,constraint_schema,convert,corresponding,cross,%
+		current_date,current_time,current_timestamp,current_user,cursor_name,%
+		data,date,datetime_interval_code,datetime_interval_precision,day,%
+		deallocate,deferrable,deferred,describe,descriptor,diagnostics,%
+		disconnect,domain,drop,dynamic_function,else,except,exception,%
+		execute,external,extract,false,first,full,get,global,hour,identity,%
+		immediate,initially,inner,input,insensitive,intersect,interval,%
+		isolation,join,last,leading,left,length,level,local,lower,match,%
+		message_length,message_octet_length,minute,month,more,mumps,name,%
+		names,national,natural,nchar,next,no,nullable,nullif,number,octet_length,%
+		only,outer,output,overlaps,pad,partial,position,prepare,preserve,prior,%
+		read,relative,repeatable,restrict,returned_length,returned_octet_length,%
+		returned_sqlstate,revoke,right,rows,row_count,scale,schema_name,scroll,%
+		second,serializable,server_name,session,session_user,size,space,sqlstate,%
+		subclass_origin,substring,system_user,table_name,temporary,then,time,%
+		timestamp,timezone_hour,timezone_minute,trailing,transaction,translate,%
+		translation,trim,true,type,uncommitted,unknown,unnamed,upper,usage,%
+		using,value,varchar,varying,when,write,year,zone},%
+	sensitive=false,%
+	morestring=[b]"%
+}[keywords,strings]
+
+\lst@definelanguage[SQL99]{SQL}[SQL92]{SQL}%
+{	moredeletekeywords={sqlcode,sqlerror},%
+	morekeywords={abs,admin,after,aggregate,alias,array,asensitive,assignment,%
+		asymmetric,atomic,before,binary,bitvar,blob,blocked,boolean,breadth,%
+		call,cardinality,chain,characteristics,checked,class,clob,%
+		command_function_code,completion,concatenate,condition,constructor,%
+		contains,control,cube,current_path,current_role,cycle,datalink,db,%
+		depth,deref,destroy,destructor,deterministic,dictionary,dispatch,%
+		dlcomment,dlfilesize,dlfilesizeexact,dllinktype,dlurlcomplete,%
+		dlurlpath,dlurlpathonly,dlurlschema,dlurlserver,dlvalue,do,dynamic,%
+		dynamic_function_code,each,elseif,equals,every,existing,exit,expand,%
+		expanding,file,final,free,function,general,generated,grouping,handler,%
+		hash,hold,host,if,ignore,infix,initialize,inout,instantiable,integrity,%
+		iterate,key_member,key_type,large,lateral,leave,less,limit,link,%
+		localtime,localtimestamp,locator,loop,meets,message_text,method,%
+		mod,modifies,modify,nclob,new,none,normalize,object,off,old,operation,%
+		options,ordering,ordinality,out,overlay,overriding,parameter,parameters,%
+		parameter_mode,parameter_ordinal_position,parameter_specific_catalog,%
+		parameter_specific_name,parameter_specific_schema,path,period,permission,%
+		postfix,precedes,prefix,preorder,reads,recovery,recursive,redo,ref,%
+		referencing,repeat,resignal,restore,result,return,returns,role,rollup,%
+		routine,routine_catalog,routine_name,routine_schema,row,row_type_catalog,%
+		row_type_name,row_type_schema,savepoint,search,selective,self,sensitive,%
+		sequence,sets,signal,similar,simple,source,specific,specifictype,%
+		specific_name,sqlexception,sqlwarning,start,state,static,structure,%
+		style,sublist,succeeds,symmetric,system,terminate,than,%
+		transactions_committed,transactions_rolled_back,transaction_active,%
+		transform,treat,trigger,trigger_catalog,trigger_name,trigger_schema,%
+		under,undo,unlink,until,user_defined_type_catalog,user_defined_type_name,%
+		user_defined_type_schema,variable,while,without,yes}%
+}[keywords]
